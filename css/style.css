@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background: #eee;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h3, h4, h5, p, li, ul, a {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+main header {
+  width: 100%;
+  margin: .4rem auto;
+}
+
+main header nav {
+  width: 100%;
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header nav .logo {
+  width: calc(200px - 11px);
+}
+
+main header nav .logo img {
+  width: 96%;
+}
+
+main header nav .logo, main header nav .profile {
+  height: 100px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: #fff;
+}
+
+main header nav .logo img, main header nav .profile img {
+  max-width: 96%;
+}
+
+main header nav .profile {
+  width: 150px;
+}
+
+main header nav .profile a img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+main header nav .nav-item-wrp {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-gap: 1rem;
+  width: 95%;
+  margin: 0 auto;
+  background: #fff;
+  padding: .5rem 1rem;
+  height: 100px;
+}
+
+main header nav .nav-item-wrp h2 {
+  width: 100%;
+  font-size: 1.6em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #223477;
+  font-weight: bold;
+}
+
+main header nav .nav-item-wrp ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+main header nav .nav-item-wrp ul li {
+  width: 32%;
+  list-style-type: none;
+}
+
+main header nav .nav-item-wrp ul li a {
+  width: 100%;
+  display: inline-block;
+  padding: .4rem .5rem;
+  background: #223477;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+main header nav .nav-item-wrp ul li a:hover {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  opacity: .88;
+}
+
+main header nav .nav-item-wrp ul li .active-btn {
+  background: #ff5271;
+}
+
+main header nav .nav-item-wrp ul h3 {
+  width: 100%;
+  color: #223477;
+  padding: 0 0 1rem;
+  font-size: 1.3em;
+}
+
+main .Overview-Detail-wrapper {
+  width: 100%;
+  margin: 1rem 0 0;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto  1fr;
+      grid-template-columns: auto  1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-gap: 1rem;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Left-ovr-detail {
+  width: 160px;
+  background: #fff;
+  height: 100%;
+  padding: .5rem;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Left-ovr-detail ul li {
+  padding: 0rem 0;
+  width: 100%;
+  list-style-type: none;
+  border: 1px solid #223477;
+  margin: 0 0 .8rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Left-ovr-detail ul li a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Left-ovr-detail ul li a:hover {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  opacity: .77;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Left-ovr-detail ul li a h3 {
+  padding: .5rem 0 .5rem .6rem;
+  font-size: 1.11em;
+  text-transform: capitalize;
+  color: #000;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Left-ovr-detail ul li a p {
+  padding: 1rem 0;
+  background: #039ac0;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Left-ovr-detail ul .item2 p {
+  background: #f5284d !important;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Left-ovr-detail ul .item3 p {
+  background: #ffb517 !important;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail {
+  width: 100%;
+  margin: 0 0 1.5rem;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-gap: 1rem;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt-cmn01 {
+  background: #fff;
+  overflow: hidden;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt-cmn01:hover {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt-cmn01:hover img {
+  -webkit-transform: scale(1.019);
+          transform: scale(1.019);
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt-cmn01 .Rt-heading {
+  width: 100%;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt-cmn01 .Rt-heading h2 {
+  font-size: 1.2em;
+  text-transform: capitalize;
+  background: #223477;
+  color: #fff;
+  padding: .5rem 0;
+  text-align: center;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt-cmn01 figure {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt-cmn01 figure img {
+  max-width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt3 .table-wrp {
+  width: 100%;
+  padding: .5rem 0 0;
+  overflow: scroll;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt3 .table-wrp::-webkit-scrollbar-track {
+  background: #22347721;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt3 .table-wrp::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt3 .table-wrp::-webkit-scrollbar-thumb {
+  background: #223477;
+  border-radius: 5px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt3 .table-wrp::-webkit-scrollbar-thumb:hover {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: #3a4c8b;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt3 .table-wrp table {
+  width: 103%;
+  height: 110px;
+  border-collapse: inherit;
+  border-spacing: inherit;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt3 .table-wrp table thead th {
+  background: #223477;
+  padding: .7rem 0;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1em;
+  border-right: 1px solid #000;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt3 .table-wrp table thead th:last-child {
+  border-right: none;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt3 .table-wrp table tbody tr td {
+  color: #000;
+  text-transform: capitalize;
+  font-size: 1em;
+  padding: .5rem 0;
+  text-align: center;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt3 .table-wrp table tbody tr td:last-child {
+  border-right: none;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt3 .table-wrp table tfoot tr td {
+  color: #223477;
+  text-transform: capitalize;
+  font-size: 1em;
+  padding: .5rem 0;
+  text-align: center;
+  background: #22347721;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt4 {
+  background: #fff;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt4 figure {
+  margin: 1rem 0 0;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt4 figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt4 .Dso-wrp {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: .5rem .8rem;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt4 .Dso-wrp .ds-cmn {
+  width: 100%;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt4 .Dso-wrp .ds-cmn h3 {
+  font-size: 1.1em;
+  text-transform: capitalize;
+  line-height: 1.5;
+  letter-spacing: .5px;
+  word-spacing: .5px;
+  padding: 0 0 .5rem;
+  color: #000;
+  font-weight: bold;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt4 .Dso-wrp .ds-cmn label {
+  width: 100%;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt4 .Dso-wrp .ds-cmn label select {
+  width: 100%;
+  cursor: pointer;
+  padding: .5rem .5rem;
+  outline: none;
+  border: 1px solid #223477;
+  color: #223477;
+  border-radius: 5px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt4 .Dso-wrp .ds-cmn label select:hover {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border-color: #000;
+  -webkit-transform: scale(1.008);
+          transform: scale(1.008);
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .date-wrp {
+  width: 100%;
+  text-align: right;
+  margin: 1.5rem 0 .5rem;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .date-wrp h4 {
+  font-size: 1.1em;
+  color: #000;
+  font-weight: bold;
+  text-transform: Bold;
+  letter-spacing: .5px;
+  word-spacing: 1px;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=style.css.map */
