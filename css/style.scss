@@ -144,9 +144,9 @@ h1,h2,h3,h4,h5,p,li,ul,a{
              display: grid;
              grid-template-columns: auto  1fr;
              justify-content: space-between;
-             grid-gap: 1rem;
+             grid-gap: 2rem;
              .Left-ovr-detail{
-                 width: 250px;
+                 width: 190px;//250px;
                  background: #fff;
                  height: 100%; //vh;
                  padding: .5rem;
@@ -159,6 +159,11 @@ h1,h2,h3,h4,h5,p,li,ul,a{
                          margin: 0 0 .8rem ;
                          cursor: pointer;
                          overflow: hidden;
+                         transition: all .3s ease-in-out;
+                         &:hover{
+                            transition: all .3s ease-in-out;
+                            transform: scale(1.037);
+                         }
                        a{
                            text-decoration: none;
                            width: 100%;

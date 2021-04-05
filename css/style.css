@@ -187,11 +187,11 @@ main .Overview-Detail-wrapper .overview-detail-content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 main .Overview-Detail-wrapper .overview-detail-content .Left-ovr-detail {
-  width: 250px;
+  width: 190px;
   background: #fff;
   height: 100%;
   padding: .5rem;
@@ -205,6 +205,15 @@ main .Overview-Detail-wrapper .overview-detail-content .Left-ovr-detail ul li {
   margin: 0 0 .8rem;
   cursor: pointer;
   overflow: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+main .Overview-Detail-wrapper .overview-detail-content .Left-ovr-detail ul li:hover {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: scale(1.037);
+          transform: scale(1.037);
 }
 
 main .Overview-Detail-wrapper .overview-detail-content .Left-ovr-detail ul li a {
