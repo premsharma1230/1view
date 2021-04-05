@@ -191,7 +191,7 @@ main .Overview-Detail-wrapper .overview-detail-content {
 }
 
 main .Overview-Detail-wrapper .overview-detail-content .Left-ovr-detail {
-  width: 160px;
+  width: 250px;
   background: #fff;
   height: 100%;
   padding: .5rem;
@@ -386,7 +386,6 @@ main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-co
 
 main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt4 figure img {
   max-width: 100%;
-  height: auto;
 }
 
 main .Overview-Detail-wrapper .overview-detail-content .Right-ovr-detail .Rgt-content .Rt4 .Dso-wrp {
